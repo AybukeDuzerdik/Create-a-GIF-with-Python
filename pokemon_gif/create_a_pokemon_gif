@@ -1,0 +1,17 @@
+import cv2
+import imageio.v3 as iio
+
+
+filenames = [
+    'PlusleMinun1.png',
+    'PlusleMinun2.png',
+    'PlusleMinun.png',
+]
+images = []
+
+for filename in filenames:
+    image= iio.imread(filename)
+    image= cv2.resize(image,(270,150))
+    images.append(image)
+
+iio.imwrite('pokemon.gif', images, duration=300, loop=0)
