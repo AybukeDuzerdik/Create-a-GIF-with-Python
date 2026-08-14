@@ -2,16 +2,16 @@ import imageio.v3 as iio
 
 
 filenames = [
-    r'C:\Users\aybuk\PycharmProjects\WelcomeScreen\dino1.png',
-    r'C:\Users\aybuk\PycharmProjects\WelcomeScreen\dino2.png',
-    r'C:\Users\aybuk\PycharmProjects\WelcomeScreen\dino3.png',
-    r'C:\Users\aybuk\PycharmProjects\WelcomeScreen\dino4.png'
+    'dino1.png',
+    'dino2.png',
+    'dino3.png',
+    'dino4.png'
 ]
 images = []
 
 for filename in filenames:
     images.append(iio.imread(filename))
 
-iio.imwrite(r'C:\Users\aybuk\PycharmProjects\WelcomeScreen\dino.gif', images, duration=500, loop=0)
+iio.imwrite('dino.gif', images, duration=500, loop=0)
 
 
