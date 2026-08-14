@@ -5,7 +5,7 @@ import imageio.v3 as iio
 filenames = [
     'PlusleMinun1.png',
     'PlusleMinun2.png',
-    'PlusleMinun.png',
+    'PlusleMinun3.png',
 ]
 images = []
 
