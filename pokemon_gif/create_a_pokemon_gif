@@ -1,6 +1,6 @@
 import cv2
 import imageio.v3 as iio
-
+# first make sure, you have the cv2 and imageio.v3 uploaded to your desktop.
 
 filenames = [
     'PlusleMinun1.png',
@@ -9,9 +9,13 @@ filenames = [
 ]
 images = []
 
+#For the image files ensure the files are in the same file as the directory.
+#If you want to change the size of your image you can use .resize()
+
 for filename in filenames:
     image= iio.imread(filename)
     image= cv2.resize(image,(270,150))
     images.append(image)
 
 iio.imwrite('pokemon.gif', images, duration=300, loop=0)
+# Lowering the duration value increases the image transition speed.
